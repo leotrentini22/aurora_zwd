@@ -5,7 +5,7 @@ aurora/_version.py
 *.pyc
 
 # Virtual environments
-venv
+venv*
 .tox
 
 # Packaging

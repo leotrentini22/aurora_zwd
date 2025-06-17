@@ -263,6 +263,7 @@ locations: dict[str, float] = {
     "dwi": 0.00000e00,
     "10u_wave": 2.90337e-01,
     "10v_wave": 1.26789e-01,
+    "zwd": 0.00000e00,
 }
 
 scales: dict[str, float] = {
@@ -454,4 +455,5 @@ scales: dict[str, float] = {
     "dwi": 1.00000e00,
     "10u_wave": 6.43740e00,
     "10v_wave": 5.40235e00,
+    "zwd": 1.00000e00,
 }

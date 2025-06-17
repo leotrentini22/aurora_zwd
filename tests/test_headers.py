@@ -18,6 +18,10 @@ for path in _root.rglob("**/*.py"):
     if len(relative_path.parents) >= 2 and str(relative_path.parents[-2]) in {"venv"}:
         continue
 
+    # Ignore any top-level directories starting with "venv"
+    if any(part.startswith("venv") for part in relative_path.parts):
+        continue
+
     # Ignore the automatically generated version file.
     if relative_path.name in {"_version.py"}:
         continue
